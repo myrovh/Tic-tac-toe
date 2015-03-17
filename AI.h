@@ -13,11 +13,11 @@
 
 class Ai {
 protected:
-    std::string name;
+    char name;
 
 public:
-    Ai(std::string ai_name);
-    std::string get_name();
+    Ai(char ai_name);
+    char get_name();
     virtual bool make_move(Board* game_board) = 0;
 };
 

@@ -38,7 +38,6 @@ OBJECTFILES= \
 	${OBJECTDIR}/AI.o \
 	${OBJECTDIR}/AI_Dumb.o \
 	${OBJECTDIR}/Ai_Weighted.o \
-	${OBJECTDIR}/Grid.o \
 	${OBJECTDIR}/board.o \
 	${OBJECTDIR}/main.o
 
@@ -81,11 +80,6 @@ ${OBJECTDIR}/Ai_Weighted.o: Ai_Weighted.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Ai_Weighted.o Ai_Weighted.cpp
-
-${OBJECTDIR}/Grid.o: Grid.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Grid.o Grid.cpp
 
 ${OBJECTDIR}/board.o: board.cpp 
 	${MKDIR} -p ${OBJECTDIR}

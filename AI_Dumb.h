@@ -12,7 +12,7 @@
 
 class Ai_Dumb : public Ai {
 public:
-    Ai_Dumb(std::string name);
+    Ai_Dumb(char name);
     bool make_move(Board* game_board);
 };
 

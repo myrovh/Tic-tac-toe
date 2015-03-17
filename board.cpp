@@ -7,42 +7,42 @@ Board::Board(char sig1, char sig2) {
     blank_space = ' ';
 
     //build board_table
-    int array_count = 0;
     for(int x = 0; x < 3; x++) {
 	for(int y = 0; y < 3; y++) {
-	    game_board[array_count] = new Grid(x, y, blank_space);
-	    array_count++;
+	    game_board[x][y] = blank_space;
 	}
     }
 
     //set lines
 }
 
-Grid* Board::get_grid(int x, int y) {
-    for(int count = 0; count < BOARD_SQUARES; count++) {
-	if(game_board[count]->x_location == x && game_board[count]->y_location == y) {
-	    return game_board[count];
-	}
+char Board::get_grid(int x, int y) {
+    if(x < BOARD_SIZE && x >= 0 && y < BOARD_SIZE && y >= 0) {
+	return game_board[x][y];
     }
 
-    return nullptr;
+    return '\0';
+}
+
+bool Board::set_grid(int x, int y, char edit) {
+    if(game_board[x][y] == blank_space) {
+	if(edit == player_1 || edit == player_2) {
+	    game_board[x][y] = edit;
+	    return true;
+	}
+    }
+    return false;
 }
 
 std::string Board::get_board_display() {
     std::string board_display;
 
-    board_display += game_board[0]->grid_data;
-    board_display += game_board[1]->grid_data;
-    board_display += game_board[2]->grid_data;
-    board_display += '\n';
-    board_display += game_board[3]->grid_data;
-    board_display += game_board[4]->grid_data;
-    board_display += game_board[5]->grid_data;
-    board_display += '\n';
-    board_display += game_board[6]->grid_data;
-    board_display += game_board[7]->grid_data;
-    board_display += game_board[8]->grid_data;
-    board_display += '\n';
+    for(int x = 0; x < 3; x++) {
+	for(int y = 0; y < 3; y++) {
+	    board_display += game_board[x][y];
+	}
+	board_display += '\n';
+    }
     board_display += '\n';
 
     return board_display;

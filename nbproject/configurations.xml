@@ -7,7 +7,6 @@
       <itemPath>AI.h</itemPath>
       <itemPath>AI_Dumb.h</itemPath>
       <itemPath>Ai_Weighted.h</itemPath>
-      <itemPath>Grid.h</itemPath>
       <itemPath>board.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -20,7 +19,6 @@
       <itemPath>AI.cpp</itemPath>
       <itemPath>AI_Dumb.cpp</itemPath>
       <itemPath>Ai_Weighted.cpp</itemPath>
-      <itemPath>Grid.cpp</itemPath>
       <itemPath>board.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
@@ -33,6 +31,7 @@
                    displayName="Important Files"
                    projectFiles="false"
                    kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>.gitignore</itemPath>
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
@@ -60,10 +59,6 @@
       <item path="Ai_Weighted.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Ai_Weighted.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Grid.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Grid.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="board.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -103,10 +98,6 @@
       <item path="Ai_Weighted.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Ai_Weighted.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Grid.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Grid.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="board.cpp" ex="false" tool="1" flavor2="0">
       </item>

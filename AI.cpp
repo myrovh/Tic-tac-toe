@@ -1,9 +1,9 @@
 #include "AI.h"
 
-Ai::Ai(std::string ai_name) {
-    name = ai_name;
+Ai::Ai(char ai_signature) {
+    name = ai_signature;
 }
 
-std::string Ai::get_name() {
+char Ai::get_name() {
     return name;
 }

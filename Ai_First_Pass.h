@@ -11,8 +11,11 @@
 #include "AI.h"
 
 class Ai_First_Pass : public Ai {
+private:
+    char opponent;
+
 public:
-    Ai_First_Pass(char name, Board* game_board);
+    Ai_First_Pass(char name, char opponent, Board* game_board);
     bool make_move();
 };
 

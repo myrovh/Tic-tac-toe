@@ -31,7 +31,7 @@ public:
     char get_grid(int x, int y);
     bool set_grid(int x, int y, char edit);
     board_line get_line(int array_point);
-    bool is_game_over();
+    bool is_game_continue();
     std::string get_board_display();
 };
 

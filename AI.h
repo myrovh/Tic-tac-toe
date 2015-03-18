@@ -17,6 +17,8 @@ protected:
     Board* game_board;
 
     int get_line_count(int line_number, char symbol);
+    pair_int get_free_space(int line_number);
+    bool set_move(int line_number);
 
 public:
     Ai(char ai_name, Board* game_board);

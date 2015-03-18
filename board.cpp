@@ -58,12 +58,15 @@ bool Board::set_grid(int x, int y, char edit) {
 std::string Board::get_board_display() {
     std::string board_display;
 
+    board_display += "+---+\n";
     for(int x = 0; x < 3; x++) {
+	board_display += "|";
 	for(int y = 0; y < 3; y++) {
 	    board_display += game_board[x][y];
 	}
-	board_display += '\n';
+	board_display += "|\n";
     }
+    board_display += "+---+";
     board_display += '\n';
 
     return board_display;

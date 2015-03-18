@@ -6,6 +6,7 @@
                    projectFiles="true">
       <itemPath>AI.h</itemPath>
       <itemPath>AI_Dumb.h</itemPath>
+      <itemPath>Ai_First_Pass.h</itemPath>
       <itemPath>Ai_Weighted.h</itemPath>
       <itemPath>board.h</itemPath>
     </logicalFolder>
@@ -18,6 +19,7 @@
                    projectFiles="true">
       <itemPath>AI.cpp</itemPath>
       <itemPath>AI_Dumb.cpp</itemPath>
+      <itemPath>Ai_First_Pass.cpp</itemPath>
       <itemPath>Ai_Weighted.cpp</itemPath>
       <itemPath>board.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
@@ -55,6 +57,10 @@
       <item path="AI_Dumb.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="AI_Dumb.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Ai_First_Pass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Ai_First_Pass.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Ai_Weighted.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -94,6 +100,10 @@
       <item path="AI_Dumb.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="AI_Dumb.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Ai_First_Pass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Ai_First_Pass.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Ai_Weighted.cpp" ex="false" tool="1" flavor2="0">
       </item>

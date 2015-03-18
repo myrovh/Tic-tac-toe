@@ -14,11 +14,14 @@
 class Ai {
 protected:
     char name;
+    Board* game_board;
+
+    int get_line_count(int line_number, char symbol);
 
 public:
-    Ai(char ai_name);
+    Ai(char ai_name, Board* game_board);
     char get_name();
-    virtual bool make_move(Board* game_board) = 0;
+    virtual bool make_move() = 0;
 };
 
 #endif	/* AI_H */

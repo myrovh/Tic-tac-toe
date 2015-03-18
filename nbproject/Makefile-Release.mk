@@ -37,6 +37,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/AI.o \
 	${OBJECTDIR}/AI_Dumb.o \
+	${OBJECTDIR}/Ai_First_Pass.o \
 	${OBJECTDIR}/Ai_Weighted.o \
 	${OBJECTDIR}/board.o \
 	${OBJECTDIR}/main.o
@@ -75,6 +76,11 @@ ${OBJECTDIR}/AI_Dumb.o: AI_Dumb.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/AI_Dumb.o AI_Dumb.cpp
+
+${OBJECTDIR}/Ai_First_Pass.o: Ai_First_Pass.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Ai_First_Pass.o Ai_First_Pass.cpp
 
 ${OBJECTDIR}/Ai_Weighted.o: Ai_Weighted.cpp 
 	${MKDIR} -p ${OBJECTDIR}

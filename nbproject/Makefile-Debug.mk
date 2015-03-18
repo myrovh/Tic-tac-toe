@@ -38,6 +38,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/AI.o \
 	${OBJECTDIR}/AI_Dumb.o \
 	${OBJECTDIR}/Ai_First_Pass.o \
+	${OBJECTDIR}/Ai_Player.o \
 	${OBJECTDIR}/Ai_Weighted.o \
 	${OBJECTDIR}/board.o \
 	${OBJECTDIR}/main.o
@@ -81,6 +82,11 @@ ${OBJECTDIR}/Ai_First_Pass.o: Ai_First_Pass.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Ai_First_Pass.o Ai_First_Pass.cpp
+
+${OBJECTDIR}/Ai_Player.o: Ai_Player.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Ai_Player.o Ai_Player.cpp
 
 ${OBJECTDIR}/Ai_Weighted.o: Ai_Weighted.cpp 
 	${MKDIR} -p ${OBJECTDIR}

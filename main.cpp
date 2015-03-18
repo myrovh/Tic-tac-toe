@@ -10,13 +10,14 @@
 #include "AI.h"
 #include "AI_Dumb.h"
 #include "Ai_First_Pass.h"
+#include "Ai_Player.h"
 
 
 int main(int argc, char** argv) {
 
     //Load AI functions and board
     Board* board = new Board('X', 'O');
-    Ai* player_1 = new Ai_First_Pass('X', 'O', board);
+    Ai* player_1 = new Ai_Player('X', board);
     Ai* player_2 = new Ai_First_Pass('O', 'X', board);
 
     std::cout << "Game is Starting" << std::endl;
